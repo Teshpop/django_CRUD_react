@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-zaz3=ivc*aqoc@g=yttdkl0cw4k2ba1+$)0^w&$lojsj67$gm8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv('FRONTEND_URL', '').split(",")
 
 
 # Application definition
